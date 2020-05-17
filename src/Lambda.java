@@ -9,7 +9,7 @@ public class Lambda {
      * @return lambda expression.
      */
     public static BiFunction<Double, Double, Double> getMax() {
-        return Math::max;
+        return (a, b) -> Math.max(a,b);
     }
 
     /**
@@ -18,6 +18,6 @@ public class Lambda {
      * @return lambda expression.
      */
     public static Function<Double, Double> getSqrt() {
-        return Math::sqrt;
+        return (a) -> Math.sqrt(a);
     }
 }
